@@ -1,0 +1,52 @@
+/* Стили для формы */
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Стили для заголовка формы */
+  form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+
+  /* Стили для полей ввода */
+  form label {
+    display: block;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+  }
+
+  /* Стили для кнопки отправки */
+  form input[type="submit"] {
+    background-color: #0088cc;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  form input[type="submit"]:hover {
+    background-color: #006699;
+  }
