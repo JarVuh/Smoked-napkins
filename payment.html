@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Оплата</title>
+  <style>
+    body {
+      background-color: #F9F9F9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    h1 {
+      margin-top: 50px;
+      color: #414141;
+    }
+    
+    .form {
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #FFFFFF;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form input[type="text"],
+    .form input[type="email"],
+    .form input[type="tel"],
+    .form input[type="submit"] {
+      display: block;
+      margin: 10px auto;
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 3px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form input[type="text"]:focus,
+    .form input[type="email"]:focus,
+    .form input[type="tel"]:focus {
+      outline: none;
+      box-shadow: 0 0 3px rgba(81, 203, 238, 1);
+    }
+    
+    .form input[type="submit"] {
+      background-color: #009BFF;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+    
+    .form input[type="submit"]:hover {
+      background-color: #0082D6;
+    }
+    
+    .success {
+      background-color: #27AE60;
+      color: #FFFFFF;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+    }
+    
+    .error {
+      background-color: #E74C3C;
+      color: #FFFFFF;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Оплата</h1>
+    <form class="form" action="payment_success.html" method="post">
+      <input type="text" name="cardholder_name" placeholder="Имя на карте" required>
+      <input type="text" name="card_number" placeholder="Номер карты" required>
+      <input type="text" name="expiry_date" placeholder="Срок действия (мм/гг)" required>
+      <input type="text" name="cvv" placeholder="CVV" required>
+      <input type="submit" value="Оплатить">
+    </form>
+  </div>
+
+  <script>
+    setTimeout(function() {
+      var paymentStatus = document.getElementById("payment-status");
+      paymentStatus.classList.remove("hidden");
+      setTimeout(function() {
+        window.location.href = "main.html";
+      }, 3000);
+    }, 0);
+  </script>
+  

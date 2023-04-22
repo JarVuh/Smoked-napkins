@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Успешная оплата</title>
+	<style>
+		body {
+			background-color: #f5f5f5;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			color: #333;
+		}
+        .container {
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 20px;
+	}
+
+	h1 {
+		font-size: 36px;
+		font-weight: bold;
+		margin-bottom: 20px;
+		color: #009879;
+	}
+
+	p {
+		margin-bottom: 10px;
+		color: #666;
+	}
+
+	.success-message {
+		background-color: #e0f3eb;
+		padding: 30px;
+		border-radius: 10px;
+		text-align: center;
+		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 10px 20px;
+		background-color: #009879;
+		color: #fff;
+		text-decoration: none;
+		border-radius: 5px;
+		transition: background-color 0.3s ease;
+	}
+
+	.btn:hover {
+		background-color: #008568;
+	}
+
+	@media screen and (max-width: 768px) {
+		h1 {
+			font-size: 30px;
+		}
+		.container {
+			padding: 10px;
+		}
+		.success-message {
+			padding: 20px;
+		}
+		.btn {
+			padding: 8px 16px;
+		}
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="success-message">
+			<h1>Оплата прошла успешно</h1>
+			<p>Спасибо за вашу покупку!</p>
+			<p>Мы получили ваш платеж и ваш заказ обрабатывается.</p>
+			<p>Пожалуйста, проверьте вашу электронную почту для получения квитанции и дальнейших инструкций.</p>
+			<a href="main.html" class="btn">Вернуться на главную страницу</a>
+		</div>
+	</div>
+</body>
+</html>
